@@ -1,0 +1,632 @@
+[
+  {
+    "elements": [
+      {
+        "id": "create-organization;po--create-organization",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "PO- Create Organization",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 151186577
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 3141624415
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Add Organization\"",
+            "result": {
+              "status": "passed",
+              "duration": 9627462004
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "PO Create Organization \"Henry Ford Health System\" \"Henry Ford\" \"2799 W. Grand Blvd.\" \"Building 5\" \"United States\" \"Michigan\" \"Detroit\" \"48202\" \"henryford@hfs.com\" \"(313) 916-1666\" \"01\"",
+            "result": {
+              "status": "failed",
+              "duration": 13265035158,
+              "error_message": "AssertionError: expected true to equal false"
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 227477
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-1",
+            "line": 3
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 3
+          },
+          {
+            "name": "@critical",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-organization",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Create Organization",
+    "tags": [],
+    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Organization/Create_Organization.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "search-organization;po--search-organization-(uid:84f0d4d6-e8cf-4afb-b2f2-b99f079bf259)",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "PO- Search Organization (uid:84f0d4d6-e8cf-4afb-b2f2-b99f079bf259)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 172999
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 1021116699
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Search Organization\"",
+            "result": {
+              "status": "passed",
+              "duration": 9714859994
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "PO Search Organization \"Henry Ford Health System\" \"true\" \"\" \"CTRP\" \"\" \"Active\" \"Detroit\" \"48202\" \"United States\" \"(313) 916-1666\" \"henryford@hfs.com\" \"Michigan\" \"Complete\" \"ctrpcurator\" \"\" \"\" \"\" \"true\"",
+            "result": {
+              "status": "passed",
+              "duration": 7293570569
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:38"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 93140
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 4
+          },
+          {
+            "name": "@JIRA-CTRP-16",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "search-organization;reg--search-organization-(uid:ff711173-8a69-47fd-bb18-b722d2b8b366)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Reg- Search Organization (uid:ff711173-8a69-47fd-bb18-b722d2b8b366)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 99935
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 4895048343
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Search Organization\"",
+            "result": {
+              "status": "passed",
+              "duration": 9351866182
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Reg Search Organization \"Henry Ford Health System\" \"true\" \"\" \"\" \"Detroit\" \"48202\" \"United States\" \"(313) 916-1666\" \"henryford@hfs.com\" \"Michigan\" \"ctrpcurator\" \"true\"",
+            "result": {
+              "status": "passed",
+              "duration": 7110319368
+            },
+            "line": 14,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 91423
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 10
+          },
+          {
+            "name": "@JIRA-CTRP-17",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-organization",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Search Organization",
+    "tags": [],
+    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Organization/Search_Organization.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "create-person;po--create-person-(uid:0d28e943-f73b-4e61-8dd3-0ec314c3fa23)",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "PO- Create Person (uid:0d28e943-f73b-4e61-8dd3-0ec314c3fa23)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 88583
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 5027827125
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Add Person\"",
+            "result": {
+              "status": "passed",
+              "duration": 10744462424
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "PO Create Person \"px\" \"William\" \"Henry\" \"Gates\" \"sx\" \"Complete\" \"Active\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"6978\" \"Henry Ford Health System\"",
+            "result": {
+              "status": "passed",
+              "duration": 14613386975
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:48"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 128236
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 4
+          },
+          {
+            "name": "@JIRA-CTRP-18",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-person",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Create Person",
+    "tags": [],
+    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Person/Create_Person.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "search-person;po--search-person--(uid:db94037a-cf07-46b9-9625-bf5f32817d87)",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "PO- Search Person  (uid:db94037a-cf07-46b9-9625-bf5f32817d87)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 89549
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 986899773
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Search Person\"",
+            "result": {
+              "status": "passed",
+              "duration": 9726613565
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "PO Search Person \"William\" \"Gates\" \"Henry Ford Health System\" \"CTRP\" \"\" \"Active\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"Complete\" \"Create\" \"05-Dec-2016\" \"05-Dec-2017\" \"ctrpcurator\" \"On\"",
+            "result": {
+              "status": "passed",
+              "duration": 9413801445
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:53"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 90343
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 4
+          },
+          {
+            "name": "@JIRA-CTRP-27",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "search-person;reg--search-person-(uid:d73d2a90-6fab-437a-b186-44c0554ba452)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Reg- Search Person (uid:d73d2a90-6fab-437a-b186-44c0554ba452)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 90487
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 4830325120
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Search Person\"",
+            "result": {
+              "status": "passed",
+              "duration": 9197047739
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Reg Search Person \"William\" \"Gates\" \"Henry Ford Health System\" \"1234\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"On\"",
+            "result": {
+              "status": "failed",
+              "duration": 2164342,
+              "error_message": "AssertionError: Searching with Status should not be allowed\nStep name :Reg Search Person \"William\" \"Gates\" \"Henry Ford Health System\" \"1234\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"On\"\n    at Object.regSearchPerson (/Users/ahmeds6/projects/xrayTest/xrayTest/features/actionwords/actionwords.js:251:16)\n    at World.<anonymous> (/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:59:26)\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
+            },
+            "line": 14,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:58"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 64123
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 10
+          },
+          {
+            "name": "@JIRA-CTRP-24",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-person",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Search Person",
+    "tags": [],
+    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Person/Search_Person.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "create-family;po--create-family-(uid:0b83e266-56b5-4a26-a31d-f83f2307cc60)",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "PO- Create Family (uid:0b83e266-56b5-4a26-a31d-f83f2307cc60)",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 90823
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 4979813428
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Select page \"Add Family\"",
+            "result": {
+              "status": "passed",
+              "duration": 9354747596
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "PO Create Family \"Washington Cancer Center\" \"Active\" \"NIH\" \"Henry Ford Health System\"",
+            "result": {
+              "status": "passed",
+              "duration": 9829411329
+            },
+            "line": 8,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:63"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 121449
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@critical",
+            "line": 4
+          },
+          {
+            "name": "@JIRA-CTRP-28",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "create-family",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Create Family",
+    "tags": [],
+    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Family/Create_Family.feature"
+  }
+]

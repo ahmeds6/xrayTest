@@ -129,7 +129,7 @@ exports.Actionwords = {
         this.clickButton("save");
         // TODO: Implement result: "Then Organization should be created"
         expect(element.all(by.binding('step.ncyBreadcrumbLabel')).last().getText()).to.eventually.equal('Organization Detail');
-        expect(addOrg.addOrgSRCID.isPresent()).to.eventually.equal(false);
+        expect(addOrg.addOrgSRCID.isPresent()).to.eventually.equal(true);
         expect(addOrg.addOrgSRCID.isDisplayed()).to.eventually.equal(true);
     },
     clickButton: function (button) {

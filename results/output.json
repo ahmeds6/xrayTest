@@ -12,7 +12,7 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 151186577
+              "duration": 145969082
             },
             "hidden": true,
             "match": {
@@ -25,7 +25,7 @@
             "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
             "result": {
               "status": "passed",
-              "duration": 3141624415
+              "duration": 3108809278
             },
             "line": 5,
             "match": {
@@ -38,7 +38,7 @@
             "name": "Select page \"Add Organization\"",
             "result": {
               "status": "passed",
-              "duration": 9627462004
+              "duration": 9841163908
             },
             "line": 6,
             "match": {
@@ -50,9 +50,8 @@
             "keyword": "And ",
             "name": "PO Create Organization \"Henry Ford Health System\" \"Henry Ford\" \"2799 W. Grand Blvd.\" \"Building 5\" \"United States\" \"Michigan\" \"Detroit\" \"48202\" \"henryford@hfs.com\" \"(313) 916-1666\" \"01\"",
             "result": {
-              "status": "failed",
-              "duration": 13265035158,
-              "error_message": "AssertionError: expected true to equal false"
+              "status": "passed",
+              "duration": 11758232459
             },
             "line": 7,
             "match": {
@@ -64,7 +63,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 227477
+              "duration": 248806
             },
             "hidden": true,
             "match": {
@@ -87,6 +86,471 @@
           }
         ],
         "type": "scenario"
+      },
+      {
+        "id": "create-organization;po--check-for-duplicate-organization",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "PO- Check for Duplicate Organization",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 181704
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "passed",
+              "duration": 1236224940
+            },
+            "line": 12,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "name": "Organization Exist \"Henry Ford Health System\" \"Active\"",
+            "result": {
+              "status": "passed",
+              "duration": 7079212479
+            },
+            "line": 13,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:73"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Organization name \"Henry Ford Health System\"",
+            "result": {
+              "status": "passed",
+              "duration": 8074567882
+            },
+            "line": 14,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:78"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Warning Message \"Warning: Organization exists in the database. Please verify and create a new Organization record.\"",
+            "result": {
+              "status": "failed",
+              "duration": 56018488,
+              "error_message": "AssertionError: expected '' to equal 'Warning: Organization exists in the database. Please verify and create a new Organization record.'"
+            },
+            "line": 15,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:83"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 118971
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-2",
+            "line": 10
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 10
+          },
+          {
+            "name": "@major",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "create-organization;po--organization-field-lengths",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "PO- Organization Field lengths",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 136301
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "failed",
+              "duration": 549668948,
+              "error_message": "UnexpectedAlertOpenError: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.)\n    at webdriver.UnhandledAlertError.bot.Error [as constructor] (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:108:18)\n    at Function.childCtor.base (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/base.js:2256:45)\n    at new webdriver.UnhandledAlertError (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:2455:33)\n    at /Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:384:15\n    at wrappedCtr.invokeCallback_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)\n    at wrappedCtr.execute_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)\n    at wrappedCtr.executeNext_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)\n    at goog.async.run.processWorkQueue (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)\n    at process._tickCallback (internal/process/next_tick.js:103:7)"
+            },
+            "line": 20,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Organization field lengths \"165\" \"165\" \"255\" \"255\" \"165\" \"10\" \"55\" \"10\" \"4\"",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:113"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 110333
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-3",
+            "line": 18
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 18
+          },
+          {
+            "name": "@minor",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "create-organization;po--request-new-organization",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "PO- Request New Organization",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 134422
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
+            "result": {
+              "status": "failed",
+              "duration": 540395060,
+              "error_message": "UnexpectedAlertOpenError: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.)\n    at webdriver.UnhandledAlertError.bot.Error [as constructor] (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:108:18)\n    at Function.childCtor.base (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/base.js:2256:45)\n    at new webdriver.UnhandledAlertError (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:2455:33)\n    at /Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:384:15\n    at wrappedCtr.invokeCallback_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)\n    at wrappedCtr.execute_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)\n    at wrappedCtr.executeNext_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)\n    at goog.async.run.processWorkQueue (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)\n    at process._tickCallback (internal/process/next_tick.js:103:7)"
+            },
+            "line": 26,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Request New Organization",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:123"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 343897
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-4",
+            "line": 24
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 24
+          },
+          {
+            "name": "@major",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "create-organization;reg--request-new-organization",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Reg- Request New Organization",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 127535
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
+            "result": {
+              "status": "failed",
+              "duration": 521711923,
+              "error_message": "UnexpectedAlertOpenError: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.)\n    at webdriver.UnhandledAlertError.bot.Error [as constructor] (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:108:18)\n    at Function.childCtor.base (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/base.js:2256:45)\n    at new webdriver.UnhandledAlertError (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:2455:33)\n    at /Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:384:15\n    at wrappedCtr.invokeCallback_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)\n    at wrappedCtr.execute_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)\n    at wrappedCtr.executeNext_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)\n    at goog.async.run.processWorkQueue (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)\n    at process._tickCallback (internal/process/next_tick.js:103:7)"
+            },
+            "line": 32,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Request New Organization",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:123"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 101367
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-5",
+            "line": 30
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 30
+          },
+          {
+            "name": "@major",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "create-organization;reg--request-new-organization",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Reg- Request New Organization",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 122177
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
+            "result": {
+              "status": "failed",
+              "duration": 530294644,
+              "error_message": "UnexpectedAlertOpenError: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.)\n    at webdriver.UnhandledAlertError.bot.Error [as constructor] (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:108:18)\n    at Function.childCtor.base (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/base.js:2256:45)\n    at new webdriver.UnhandledAlertError (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:2455:33)\n    at /Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:384:15\n    at wrappedCtr.invokeCallback_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)\n    at wrappedCtr.execute_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)\n    at wrappedCtr.executeNext_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)\n    at goog.async.run.processWorkQueue (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)\n    at process._tickCallback (internal/process/next_tick.js:103:7)"
+            },
+            "line": 37,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Request New Organization",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:123"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 95536
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-8",
+            "line": 35
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 35
+          },
+          {
+            "name": "@major",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "create-organization;reg--request-new-organization",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Reg- Request New Organization",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 85447
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
+            "result": {
+              "status": "failed",
+              "duration": 543843533,
+              "error_message": "UnexpectedAlertOpenError: Unexpected modal dialog (text: This page is asking you to confirm that you want to leave - data you have entered may not be saved.)\n    at webdriver.UnhandledAlertError.bot.Error [as constructor] (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:108:18)\n    at Function.childCtor.base (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/base.js:2256:45)\n    at new webdriver.UnhandledAlertError (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:2455:33)\n    at /Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:384:15\n    at wrappedCtr.invokeCallback_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:1337:14)\n    at wrappedCtr.execute_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2776:14)\n    at wrappedCtr.executeNext_ (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/../webdriver/promise.js:2758:21)\n    at goog.async.run.processWorkQueue (/Users/ahmeds6/.nvm/versions/node/v7.2.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:124:15)\n    at process._tickCallback (internal/process/next_tick.js:103:7)"
+            },
+            "line": 42,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Request New Organization",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:123"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 95366
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@XRAYTEST-9",
+            "line": 40
+          },
+          {
+            "name": "@XRAYTEST-6",
+            "line": 40
+          },
+          {
+            "name": "@major",
+            "line": 40
+          }
+        ],
+        "type": "scenario"
       }
     ],
     "id": "create-organization",
@@ -95,538 +559,5 @@
     "name": "Create Organization",
     "tags": [],
     "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Organization/Create_Organization.feature"
-  },
-  {
-    "elements": [
-      {
-        "id": "search-organization;po--search-organization-(uid:84f0d4d6-e8cf-4afb-b2f2-b99f079bf259)",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "PO- Search Organization (uid:84f0d4d6-e8cf-4afb-b2f2-b99f079bf259)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 172999
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
-            "result": {
-              "status": "passed",
-              "duration": 1021116699
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Select page \"Search Organization\"",
-            "result": {
-              "status": "passed",
-              "duration": 9714859994
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "PO Search Organization \"Henry Ford Health System\" \"true\" \"\" \"CTRP\" \"\" \"Active\" \"Detroit\" \"48202\" \"United States\" \"(313) 916-1666\" \"henryford@hfs.com\" \"Michigan\" \"Complete\" \"ctrpcurator\" \"\" \"\" \"\" \"true\"",
-            "result": {
-              "status": "passed",
-              "duration": 7293570569
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:38"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 93140
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@critical",
-            "line": 4
-          },
-          {
-            "name": "@JIRA-CTRP-16",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "search-organization;reg--search-organization-(uid:ff711173-8a69-47fd-bb18-b722d2b8b366)",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Reg- Search Organization (uid:ff711173-8a69-47fd-bb18-b722d2b8b366)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 99935
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
-            "result": {
-              "status": "passed",
-              "duration": 4895048343
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Select page \"Search Organization\"",
-            "result": {
-              "status": "passed",
-              "duration": 9351866182
-            },
-            "line": 13,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Reg Search Organization \"Henry Ford Health System\" \"true\" \"\" \"\" \"Detroit\" \"48202\" \"United States\" \"(313) 916-1666\" \"henryford@hfs.com\" \"Michigan\" \"ctrpcurator\" \"true\"",
-            "result": {
-              "status": "passed",
-              "duration": 7110319368
-            },
-            "line": 14,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:43"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 91423
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@critical",
-            "line": 10
-          },
-          {
-            "name": "@JIRA-CTRP-17",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "search-organization",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Search Organization",
-    "tags": [],
-    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Organization/Search_Organization.feature"
-  },
-  {
-    "elements": [
-      {
-        "id": "create-person;po--create-person-(uid:0d28e943-f73b-4e61-8dd3-0ec314c3fa23)",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "PO- Create Person (uid:0d28e943-f73b-4e61-8dd3-0ec314c3fa23)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 88583
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
-            "result": {
-              "status": "passed",
-              "duration": 5027827125
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Select page \"Add Person\"",
-            "result": {
-              "status": "passed",
-              "duration": 10744462424
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "PO Create Person \"px\" \"William\" \"Henry\" \"Gates\" \"sx\" \"Complete\" \"Active\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"6978\" \"Henry Ford Health System\"",
-            "result": {
-              "status": "passed",
-              "duration": 14613386975
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:48"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 128236
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@critical",
-            "line": 4
-          },
-          {
-            "name": "@JIRA-CTRP-18",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "create-person",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Create Person",
-    "tags": [],
-    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Person/Create_Person.feature"
-  },
-  {
-    "elements": [
-      {
-        "id": "search-person;po--search-person--(uid:db94037a-cf07-46b9-9625-bf5f32817d87)",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "PO- Search Person  (uid:db94037a-cf07-46b9-9625-bf5f32817d87)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 89549
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
-            "result": {
-              "status": "passed",
-              "duration": 986899773
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Select page \"Search Person\"",
-            "result": {
-              "status": "passed",
-              "duration": 9726613565
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "PO Search Person \"William\" \"Gates\" \"Henry Ford Health System\" \"CTRP\" \"\" \"Active\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"Complete\" \"Create\" \"05-Dec-2016\" \"05-Dec-2017\" \"ctrpcurator\" \"On\"",
-            "result": {
-              "status": "passed",
-              "duration": 9413801445
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:53"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 90343
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@critical",
-            "line": 4
-          },
-          {
-            "name": "@JIRA-CTRP-27",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "search-person;reg--search-person-(uid:d73d2a90-6fab-437a-b186-44c0554ba452)",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Reg- Search Person (uid:d73d2a90-6fab-437a-b186-44c0554ba452)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 90487
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrptrialsubmitter\" \"Welcome01\"",
-            "result": {
-              "status": "passed",
-              "duration": 4830325120
-            },
-            "line": 12,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Select page \"Search Person\"",
-            "result": {
-              "status": "passed",
-              "duration": 9197047739
-            },
-            "line": 13,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Reg Search Person \"William\" \"Gates\" \"Henry Ford Health System\" \"1234\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"On\"",
-            "result": {
-              "status": "failed",
-              "duration": 2164342,
-              "error_message": "AssertionError: Searching with Status should not be allowed\nStep name :Reg Search Person \"William\" \"Gates\" \"Henry Ford Health System\" \"1234\" \"ctrpaum@gmail.com\" \"240-276-6978\" \"On\"\n    at Object.regSearchPerson (/Users/ahmeds6/projects/xrayTest/xrayTest/features/actionwords/actionwords.js:251:16)\n    at World.<anonymous> (/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:59:26)\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)"
-            },
-            "line": 14,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:58"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 64123
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@critical",
-            "line": 10
-          },
-          {
-            "name": "@JIRA-CTRP-24",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "search-person",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Search Person",
-    "tags": [],
-    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Person/Search_Person.feature"
-  },
-  {
-    "elements": [
-      {
-        "id": "create-family;po--create-family-(uid:0b83e266-56b5-4a26-a31d-f83f2307cc60)",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "PO- Create Family (uid:0b83e266-56b5-4a26-a31d-f83f2307cc60)",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 90823
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:4"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "Login in to CTRP app \"http://ctrp-qa.ncifcrf.gov/\" \"ctrpcurator\" \"Welcome01\"",
-            "result": {
-              "status": "passed",
-              "duration": 4979813428
-            },
-            "line": 6,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:18"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "Select page \"Add Family\"",
-            "result": {
-              "status": "passed",
-              "duration": 9354747596
-            },
-            "line": 7,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:23"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "PO Create Family \"Washington Cancer Center\" \"Active\" \"NIH\" \"Henry Ford Health System\"",
-            "result": {
-              "status": "passed",
-              "duration": 9829411329
-            },
-            "line": 8,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:63"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 121449
-            },
-            "hidden": true,
-            "match": {
-              "location": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/step_definitions/step_definitions.js:8"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@critical",
-            "line": 4
-          },
-          {
-            "name": "@JIRA-CTRP-28",
-            "line": 4
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "create-family",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Create Family",
-    "tags": [],
-    "uri": "/Users/ahmeds6/projects/xrayTest/xrayTest/features/Family/Create_Family.feature"
   }
 ]
